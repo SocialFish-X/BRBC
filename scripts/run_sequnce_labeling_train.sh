@@ -1,0 +1,13 @@
+python run_sequnce_labeling.py \
+--task_name=SKE_2019 \
+--do_train=true \
+--do_eval=false \
+--data_dir=bin/subject_object_labeling/sequence_labeling_data \
+--vocab_file=pretrained_model/chinese_L-12_H-768_A-12/vocab.txt \
+--bert_config_file=pretrained_model/chinese_L-12_H-768_A-12/bert_config.json \
+--max_seq_length=128 \
+--train_batch_size=64 \
+--learning_rate=2e-5 \
+--num_train_epochs=100.0 \
+--output_dir=./output/sequnce_labeling_model/epochs9/ \
+--pre_output_dir=./output/sequnce_infer_out/epochs9/
